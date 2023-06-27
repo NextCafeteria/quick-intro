@@ -4,7 +4,8 @@
   "description": "Quickly create user onboard walkthroughs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pr": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,15 @@
   },
   "homepage": "https://github.com/NextCafeteria/quick-intro#readme",
   "dependencies": {
-    "intro.js": "^7.0.1"
+    "intro.js": ">=2.5.0",
+    "intro.js-react": "^1.0.0",
+    "pr": "^0.3.2"
+  },
+  "peerDependencies": {
+    "intro.js": ">=2.5.0",
+    "react": ">=0.14.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
   }
 }
