@@ -1,6 +1,6 @@
 {
   "name": "@next-cafeteria/quick-intro",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Quickly create user onboard walkthroughs",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -10,7 +10,8 @@
     "pr": "prettier --write .",
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
